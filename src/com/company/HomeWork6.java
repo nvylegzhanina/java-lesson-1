@@ -31,18 +31,21 @@ public class HomeWork6 {
             switch (metric){
                 case 1: {
                     System.out.println("Граммы: " + value);
-                    System.out.println("Килограммы: " + (value / 1000));
-                    System.out.println("Тонны: " + (value / 1000000));
+                    System.out.println("Килограммы: " + ((double)value / 1000));
+                    System.out.println("Тонны: " + ((double)value / 1000000));
+                    break;
                 }
                 case 2: {
-                    System.out.println("Граммы: " + (value * 1000));
+                    System.out.println("Граммы: " + ((double)value * 1000));
                     System.out.println("Килограммы: " + value);
-                    System.out.println("Тонны: " + (value / 1000));
+                    System.out.println("Тонны: " + ((double)value / 1000));
+                    break;
                 }
                 case 3: {
-                    System.out.println("Граммы: " + (value * 1000000));
-                    System.out.println("Килограммы: " + (value * 1000));
+                    System.out.println("Граммы: " + ((double)value * 1000000));
+                    System.out.println("Килограммы: " + ((double)value * 1000));
                     System.out.println("Тонны: " + value);
+                    break;
                 }
             }
         } else if (quantity == 2)
@@ -54,18 +57,21 @@ public class HomeWork6 {
             switch (metric){
                 case 1: {
                     System.out.println("Cантиметры: " + value);
-                    System.out.println("Метры: " + (value / 100));
-                    System.out.println("Километры: " + (value / 100000));
+                    System.out.println("Метры: " + ((double)value / 100));
+                    System.out.println("Километры: " + ((double)value / 100000));
+                    break;
                 }
                 case 2: {
-                    System.out.println("Cантиметры: " + (value * 100));
+                    System.out.println("Cантиметры: " + ((double)value * 100));
                     System.out.println("Метры: " + value);
-                    System.out.println("Километры: " + (value / 1000));
+                    System.out.println("Километры: " + ((double)value / 1000));
+                    break;
                 }
                 case 3: {
-                    System.out.println("Cантиметры: " + (value * 100000));
-                    System.out.println("Метры: " + (value * 1000));
+                    System.out.println("Cантиметры: " + ((double)value * 100000));
+                    System.out.println("Метры: " + ((double)value * 1000));
                     System.out.println("Километры: " + value);
+                    break;
                 }
             }
         }
