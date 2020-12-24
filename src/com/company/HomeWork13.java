@@ -15,11 +15,11 @@ import java.util.regex.Pattern;
 
 public class HomeWork13 {
     public static void main(String[] args) {
-        Pattern pattern = Pattern.compile("[а-яА-ЯёЁ]");
+        Pattern pattern = Pattern.compile("[A-Za-z]");
         System.out.println("Введите строку");
         Scanner in = new Scanner(System.in);
         String str = in.nextLine();
-        int russianWordsCount = 0;
+        int englishWordsCount = 0;
 
         String[] splittedStr = str.split(" ");
 
@@ -33,10 +33,10 @@ public class HomeWork13 {
 
             if (x.length() == word.length()){
                 System.out.println(word);
-                russianWordsCount++;
+                englishWordsCount++;
             }
         }
 
-        System.out.println(russianWordsCount);
+        System.out.println(englishWordsCount);
     }
 }
