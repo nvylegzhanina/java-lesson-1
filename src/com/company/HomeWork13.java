@@ -24,6 +24,8 @@ public class HomeWork13 {
         String[] splittedStr = str.split(" ");
 
         for (String word : splittedStr) {
+            if (word.equals(""))
+                continue;
             String x = "";
             Matcher matcher = pattern.matcher(word);
 
