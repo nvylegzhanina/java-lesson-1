@@ -16,6 +16,7 @@ public class FinalTask4 {
                 switch (i){
                     case 3:
                         System.out.println("zip архив");
+                        i = 1;
                         break;
                     default:
                         System.out.println("Подсказка уже недоступна");

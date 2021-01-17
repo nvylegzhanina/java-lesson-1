@@ -17,8 +17,15 @@ public class FinalTask2 {
                 System.out.println(invertSign(array[1], Character.getNumericValue(array[4]), Character.getNumericValue(array[2])));
                 break;
             case 2:
-                int result = invertSign(array[1], Character.getNumericValue(array[4]), Character.getNumericValue(array[0]));
-                System.out.println(result);
+                if (array[1] == '-'){
+                    int x = Character.getNumericValue(array[4]) * -1;
+                    int result = Character.getNumericValue(array[0]) - x;
+                    System.out.println(result * -1);
+                }
+                else {
+                    int result = invertSign(array[1], Character.getNumericValue(array[4]), Character.getNumericValue(array[0]));
+                    System.out.println(result);
+                }
                 break;
             case 4:
                 switch (array[1]) {
@@ -27,12 +34,6 @@ public class FinalTask2 {
                         break;
                     case '-':
                         System.out.println(Character.getNumericValue(array[0]) - Character.getNumericValue(array[2]));
-                        break;
-                    case '*':
-                        System.out.println(Character.getNumericValue(array[0]) * Character.getNumericValue(array[2]));
-                        break;
-                    case '/':
-                        System.out.println(Character.getNumericValue(array[0]) / Character.getNumericValue(array[2]));
                         break;
                 }
 
@@ -44,8 +45,6 @@ public class FinalTask2 {
         switch (sign){
             case '+': return x - y;
             case '-': return x + y;
-            case '*': return x / y;
-            case '/': return x * y;
 
             default: throw new NotImplementedException();
         }
