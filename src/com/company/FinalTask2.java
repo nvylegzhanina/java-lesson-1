@@ -18,9 +18,7 @@ public class FinalTask2 {
                 break;
             case 2:
                 if (array[1] == '-'){
-                    int x = Character.getNumericValue(array[4]) * -1;
-                    int result = Character.getNumericValue(array[0]) - x;
-                    System.out.println(result * -1);
+                    System.out.println(Character.getNumericValue(array[0]) - Character.getNumericValue(array[4]));
                 }
                 else {
                     int result = invertSign(array[1], Character.getNumericValue(array[4]), Character.getNumericValue(array[0]));
